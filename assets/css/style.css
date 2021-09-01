@@ -24,6 +24,7 @@ family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
 
+
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* FONTS */
@@ -52,12 +53,12 @@ div.flex{
     display: flex;
 }
 div.full-container{
-   /* width: 100%;*/
+    width: 100%;
     max-width: 1850px;
     margin:0 auto;
 }
 div.large-container{
-   /* width: 100%;*/
+    width: 100%;
     max-width: 1170px;
     margin:0 auto;
     background-color: var(--azul-escuro)
@@ -96,10 +97,7 @@ h2{
    
 }
 
-nav{
-    display: none;
 
-}
 
 figcaption {
     display:none;
@@ -179,7 +177,7 @@ input::placeholder {
     font-weight: 500;
     font-family: 'Lato';
 }
-.flex-col > figure {
+.flex-col > figure > img{
     width: 200px;
 }   
 
@@ -250,7 +248,6 @@ input::placeholder {
 .secaoCalendar > h2{
     color: var(--cinza);
     font-size: 30px;
-    font-family: Lato;
     font-weight: bold;
     margin-top: 60px;
 }
@@ -310,19 +307,20 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     color: var(--cinza-claro);
-    font-size: 36px;
+    font-size: 20px;
 
 }
 
 .calendario-data-rodape  > button {
     border-radius: 3px;
     background-color: var(--azul-claro);
-    font-size: 32px;
+    font-size: 20px;
     color: var(--branco);
     width: 180px;
     margin-bottom: 30px;
     height: 45px;
 }
+
 
 .flex > h2 {
 
@@ -386,5 +384,156 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+   
+ @media screen and (min-width: 800px) {
+    
+
+    .secaoDestaque {
+        background-image: url(../img/background-destaque.webp);
+        background-position-x: 10vw;
+        background-position-y: 0vh;
+        background-size: 95%;
+        background-repeat: no-repeat;
+       
+        
+    
+    }
+
+    .topo {
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        
+       
+    }
+    
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+        color: var(--branco);
+        width: 100%;
+        justify-content: space-evenly;
+        list-style: none;
+        justify-items: flex-end;
+        margin-left: 300px;
+        padding-left: 250px;
+        font-family: Montserrat;
+        font-size: 10px;
+        margin-bottom: 30px;
+    
+    }
+
+    
+    
+    .calendario {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .courses > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .courses > ul > li {
+        flex: 30%;
+    }
+
+    .courses > img {
+        max-width: 100px;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+
+    .flex-col {
+        display: flex;
+        flex: 50%;
+        margin-top: 10px;
+    } 
+
+
+    .flex-col > figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-col > button:hover {
+        background-color: black;
+        color: var(--branco);
+
+    }
+
+    
+    .flex-col > figure > img {
+        width: 300px;
+        margin: 0px;
+        max-width: 600px;
+        padding: 0px;
+       
+    }
+
+    .secaoCalendar > h2{
+        color: var(--cinza);
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    
+    .secaoCalendar > p {
+        font-size: 15px;
+        margin: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .calendario-data-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--cinza-claro);
+        font-size: 20px;
+    
+    }
+    
+    .calendario-data-rodape  > button {
+        border-radius: 3px;
+        background-color: var(--azul-claro);
+        font-size: 18px;
+        color: var(--branco);
+        width: 120px;
+        margin-bottom: 30px;
+        height: 45px;
+        margin-top: 30px;
+    }
+
+    .calendario-data-rodape > button:hover {
+        background-color: var(--branco);
+        color: var(--azul-claro);
+        border: 1px solid var(--azul-claro);
+    }
+
+    .flex-col {
+        padding-top: 20px;
+        padding-bottom: 82px;
+    }
+
+    .info-course {
+        background-color: rgb(243, 239, 239);
+    }
+    
+
+   
+
+}
 /* MEDIA QUERIES */
