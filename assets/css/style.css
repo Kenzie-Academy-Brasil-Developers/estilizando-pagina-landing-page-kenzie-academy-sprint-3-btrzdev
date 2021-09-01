@@ -325,25 +325,96 @@ input::placeholder {
 }
 
 .flex > h2 {
-
+    font-size: 15px;
+    
+   
 }
 
-.flex {
+.flex{
     display: flex;
     flex-direction: column;
     color: var(--cinza-claro);
+    text-align: center;
+  
+  
     
 
     
 }
 
-.flex-col-contact {
-    background-color: rgb(204, 196, 196);
+
+.flex-col-contact h2 {
+    background-color: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:black;
+    
+     
 }
+.secaoContato-informacoes{
+    text-align: justify;
+    line-break: auto;
+    padding: 5%;
+    
+    
+    
+}
+
+
+ul {
+    list-style: none;
+    text-align: justify;
+    padding-top: 3%;
+  
+}
+ul img {
+    width: 6%;
+    padding-right: 3%;
+}
+
+li {
+    padding-top: 3%;
+    
+}
+.form-input-model  {
+    margin-right: 45%;
+
+  
+}
+label  {
+   visibility: hidden;
+   text-align: center;
+
+}
+
+
+#nome {
+    width: 150%;
+    margin-left: 7%;
+}
+#email{
+    width: 150%;
+    margin-left: 7%;
+}
+#mensagem {
+    width:150%;
+    height:150px;
+    display: flex;
+    margin-left: 8%;
+    
+}
+#send {
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 60%;
+}
+
 
 a{
     text-decoration: none;
     color: var(--cinza-claro);
+    
 }
 /* GERAL */
   
@@ -356,6 +427,7 @@ body{
     overflow-x: hidden;
 }
 /* BODY */
+
   
 /* HEADER */
 header{}
@@ -384,7 +456,21 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px){
+        .flex-col-contact {
+            display: flex;
+            justify-content: left;
+        }
+       
+
+
+        }
+                
+            
+            
+            
 /* MEDIA QUERIES */
